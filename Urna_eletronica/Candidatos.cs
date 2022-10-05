@@ -18,7 +18,7 @@ namespace Urna_eletronica
             {
                 case 22:
                     nome = "Bolsonaro";
-                    img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\bolsonaro.jfif";
+                    img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\img\\bolsonaro.jfif";
                     msg = "Voto computado";
                     partido = "PL";
                     return numero;
@@ -26,7 +26,7 @@ namespace Urna_eletronica
 
                 case 13:
                     nome = "Luiz Inácio Lula da Silva";
-                    img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\lula.jfif";
+                    img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\img\\lula.jfif";
                     msg = "Voto computado";
                     partido = "PT";
                     return numero;
@@ -34,7 +34,7 @@ namespace Urna_eletronica
 
                 case 15:
                     nome = "Simone Tebet";
-                    img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\simone_tebet.jpg";
+                    img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\img\\simone_tebet.jpg";
                     msg = "Voto computado";
                     partido = "PDB";
                     return numero;
@@ -42,7 +42,7 @@ namespace Urna_eletronica
 
                 case 12:
                     nome = "Ciro Gomes";
-                    img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\ciro.jpg";
+                    img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\img\\ciro.jpg";
                     msg = "Voto computado";
                     partido = "PDT";
                     return numero;
