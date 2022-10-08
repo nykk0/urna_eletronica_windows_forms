@@ -8,8 +8,9 @@ namespace Urna_eletronica
 {
     internal class Candidatos
     {
-        public string msg = "", nome = "", img = "" , partido = "" , existente= "";
-
+        public string  nome = "", img = "" , partido = "" , existente= "";
+        public int num = 0;
+        public bool existe = true;
         public int candidato(int numero) 
         {
            
@@ -19,39 +20,43 @@ namespace Urna_eletronica
                 case 22:
                     nome = "Bolsonaro";
                     img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\img\\bolsonaro.jfif";
-                    msg = "Voto computado";
                     partido = "PL";
+                    num = 22;
+                    existe = true;
                     return numero;
                     break;
 
                 case 13:
                     nome = "Luiz Inácio Lula da Silva";
                     img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\img\\lula.jfif";
-                    msg = "Voto computado";
                     partido = "PT";
+                    num = 13;
+                    existe = true;
                     return numero;
                     break;
 
                 case 15:
                     nome = "Simone Tebet";
                     img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\img\\simone_tebet.jpg";
-                    msg = "Voto computado";
                     partido = "PDB";
+                    num = 15;
+                    existe = true;
                     return numero;
                     break;
 
                 case 12:
                     nome = "Ciro Gomes";
                     img = "C:\\Users\\yanni\\source\\repos\\Urna_eletronica\\img\\ciro.jpg";
-                    msg = "Voto computado";
                     partido = "PDT";
+                    num = 12;
+                    existe = true;
                     return numero;
                     break;
 
 
                 default:
                     img = null;
-                    existente = "Candidato não existente";
+                    existe = false;
                     return numero;
                     break;
             }

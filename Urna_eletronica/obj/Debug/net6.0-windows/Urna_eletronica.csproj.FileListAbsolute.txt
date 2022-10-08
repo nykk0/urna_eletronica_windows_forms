@@ -16,3 +16,13 @@ C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\obj\Debug\net6.0-win
 C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\obj\Debug\net6.0-windows\Urna_eletronica.pdb
 C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\obj\Debug\net6.0-windows\Urna_eletronica.genruntimeconfig.cache
 C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\obj\Debug\net6.0-windows\ref\Urna_eletronica.dll
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\bin\Debug\net6.0-windows\Ubiety.Dns.Core.dll
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\obj\Debug\net6.0-windows\Urna_eletronica.csproj.CopyComplete
+C:\Users\yanni\source\repos\Urna_eletronica\Urna_eletronica\obj\Debug\net6.0-windows\Urna_eletronica.frm_resultado.resources

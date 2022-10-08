@@ -57,6 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_num2 = new System.Windows.Forms.TextBox();
             this.txt_num1 = new System.Windows.Forms.TextBox();
+            this.btn_resultado = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -420,12 +421,26 @@
             this.txt_num1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_num1.TextChanged += new System.EventHandler(this.txt_num1_TextChanged);
             // 
+            // btn_resultado
+            // 
+            this.btn_resultado.BackColor = System.Drawing.Color.White;
+            this.btn_resultado.FlatAppearance.BorderSize = 0;
+            this.btn_resultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_resultado.Location = new System.Drawing.Point(400, 3);
+            this.btn_resultado.Name = "btn_resultado";
+            this.btn_resultado.Size = new System.Drawing.Size(60, 25);
+            this.btn_resultado.TabIndex = 15;
+            this.btn_resultado.Text = "Resultado";
+            this.btn_resultado.UseVisualStyleBackColor = false;
+            this.btn_resultado.Click += new System.EventHandler(this.btn_resultado_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(766, 312);
+            this.Controls.Add(this.btn_resultado);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
@@ -471,5 +486,6 @@
         private Label label8;
         private Label label7;
         private Label lblpartido;
+        private Button btn_resultado;
     }
 }

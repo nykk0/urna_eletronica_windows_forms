@@ -34,6 +34,8 @@ namespace Urna_eletronica
 
         Candidatos candidatos = new Candidatos();
         bool voto_computado = false , num_1 = false , num_2 = false;
+        conexao bd = new conexao();
+        string sql;
 
         private void txt_num1_TextChanged(object sender, EventArgs e)
         {
@@ -179,8 +181,19 @@ namespace Urna_eletronica
             }
             else
             {
+                sql = string.Format("insert into voto values(null,'Voto em Branco','','00')"
+                       );
+                bd.AlterarTabelas(sql);
                 MessageBox.Show("Voto computado");
             }
+        }
+
+        private void btn_resultado_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frm_resultado cad = new frm_resultado();
+            cad.ShowDialog();
+            this.Visible = true;
         }
 
         private void btn_confirmar_Click(object sender, EventArgs e)
@@ -193,13 +206,9 @@ namespace Urna_eletronica
                 candidatos.candidato(voto);
                 string nome_candidato = candidatos.nome , partido = candidatos.partido;
 
-                if (candidatos.existente == "Candidato não existente")
-                {
-                    MessageBox.Show(candidatos.existente);
-                    limpar();
-                }
-                
-                if (voto_computado == false) {            
+          
+
+                if (voto_computado == false && candidatos.existe == true) {            
                     pictureBox1.Load(candidatos.img);
                     lblnome.Text = nome_candidato;
                     lblpartido.Text = partido;
@@ -207,11 +216,23 @@ namespace Urna_eletronica
                     voto_computado = true;
                 }
 
-                else if (voto_computado == true){
-                    MessageBox.Show(candidatos.msg);
+                else if (voto_computado == true && candidatos.existe == true)
+                {
+                    sql = string.Format("insert into voto values(null,'{0}','{1}','{2}')",
+                       candidatos.nome, candidatos.partido , candidatos.num);
+                    bd.AlterarTabelas(sql);
+                    MessageBox.Show("Voto computado");
                     limpar();
                 }
-                
+
+                else if (candidatos.existe == false) 
+                {
+                    MessageBox.Show("Candidato não existente");
+                    limpar();
+                }
+
+               
+
             }
             catch(Exception ex) {
                 if(txt_num1.Text == "" || txt_num2.Text == "") 
